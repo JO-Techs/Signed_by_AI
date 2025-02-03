@@ -120,3 +120,15 @@ Analyze pressure points, speed, and stroke order (if available) to detect forger
 - **Accuracy**: Percentage of correct matches.
 - **False Acceptance Rate (FAR)**: Rate of invalid signatures incorrectly recognized as valid.
 - **False Rejection Rate (FRR)**: Rate of valid signatures incorrectly rejected.
+
+
+## Methods in Image Sharpening, what should I choose?
+
+| Method                  | Use Case                            | Strength                     |
+|-------------------------|-----------------------------------|-----------------------------|
+| **Unsharp Masking**     | General sharpening                | Fast, simple                |
+| **Laplacian Sharpening**| Enhancing high-contrast edges     | Strong edge boost           |
+| **High-Pass Filtering** | Enhancing fine details           | Works in frequency domain   |
+| **Bilateral Filter**    | Noise reduction + edge preservation | Smooths while keeping sharp edges |
+| **Guided Filter**       | Fast alternative to bilateral filtering | Efficient and high quality |
+| **Super-Resolution CNN**| AI-based enhancement             | Best quality but slow       |
